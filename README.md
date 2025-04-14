@@ -15,4 +15,6 @@ Stretch Goals?
 
 TODO: Replace the wireframe below with you own design.
 
-![wireframe](wireframe-example.png)
+![wireframe](wireframe-example3.png)
+![wireframe](wireframe-example2.png)
+![wireframe](wireframe-example1.png)
