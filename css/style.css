@@ -1,3 +1,4 @@
+/* css/style.css */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  min-height: 100vh;
 }
 
 nav {
@@ -43,36 +45,88 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-.columns {
-  display: flex;
-  gap: 50px;
+/* Review System Styles */
+.review-system {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.column {
-  flex: 1;
+.review-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
 }
 
-.column h3 {
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #666;
+}
+
+.reviews-list {
+  margin-top: 30px;
+}
+
+.review-item {
+  background: #fff;
+  padding: 20px;
   margin-bottom: 20px;
-  color: #444;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
 }
 
-.column ul {
-  list-style: none;
-  line-height: 2;
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.column a {
-  text-decoration: none;
-  color: #666;
-}
-
-.column a:hover {
+.review-author {
+  font-weight: bold;
   color: #333;
 }
 
-@media (max-width: 768px) {
-  .columns {
-      flex-direction: column;
-  }
+.review-date {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.review-actions {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.review-actions button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 0.9em;
 }
