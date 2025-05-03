@@ -1,4 +1,4 @@
-// js/main.js
+
 document.addEventListener('DOMContentLoaded', () => {
     if (document.getElementById('reviewForm')) {
         initializeReviewSystem();
@@ -84,7 +84,6 @@ function clearForm() {
     editingId = null;
 }
 
-// Remove the export statement for browser compatibility
 function sayHello() {
     return 'hello';
 }
